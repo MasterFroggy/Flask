@@ -2,6 +2,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/yo')
+@app.route('/')
 def welcome():
-  return "Welcome to the Codecademy Calculator!"
+  return "Welcome to Fetchtown Mess!"
+
+@app.route('/yo')
+def uhh():
+  return "Yo"
+
+app.run()
